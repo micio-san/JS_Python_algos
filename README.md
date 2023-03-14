@@ -1,13 +1,27 @@
 # JS exercises:
 
-1:Reverse a string\
+## app.js
 
-2:validate a palindrome\
+1:Reverse a string
 
-3:reverse an integer\
+2:validate a palindrome
 
-4:capitalize letters\
+3:reverse an integer
 
-5:max character\
+4:capitalize letters
 
-6:fizzbuzz\
+5:max character
+
+6:fizzbuzz
+
+## app2.js
+
+1: Longest Word /
+
+2: array chunking /
+
+3: flatten array /
+
+4: anagram /
+
+5: letter changes /
