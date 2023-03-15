@@ -124,3 +124,18 @@ function letterChanges(str) {
 }
 
 letterChanges("hello there");
+
+//CHALLENGE 6: Write a method that returns a deep array like [[key, value]]
+//ex Result: ({ a: 1, b: 2 }) => [['a', 1], ['b', 2]]
+function checkIfObj(val) {
+  return !Array.isArray(val) && typeof val === "object" && val !== null;
+}
+const makePairs = (object) => {
+  let answer;
+  if (checkIfObj(object)) {
+    answer = Object.entries(object);
+  }
+  return answer;
+};
+
+makePairs({ a: 1, b: 2, c: 3, d: 4, e: 5 });

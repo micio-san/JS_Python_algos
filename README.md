@@ -2,26 +2,28 @@
 
 ## app.js
 
-1:Reverse a string
+1:Reverse a String
 
-2:validate a palindrome
+2:Validate a Palindrome
 
-3:reverse an integer
+3:Reverse an Integer
 
-4:capitalize letters
+4:Capitalize Letters
 
-5:max character
+5:Max Character
 
-6:fizzbuzz
+6:Fizzbuzz
 
 ## app2.js
 
-1: Longest Word /
+1: Longest Word
 
-2: array chunking /
+2: Array Chunking
 
-3: flatten array /
+3: Flatten Array
 
-4: anagram /
+4: Anagram
 
-5: letter changes /
+5: Letter Changes
+
+6: Make Pairs
