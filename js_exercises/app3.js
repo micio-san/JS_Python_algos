@@ -33,6 +33,7 @@ function sumAllPrimes(n) {
       res += i;
     }
   }
+  return res;
 }
 
 sumAllPrimes(10);
@@ -40,7 +41,22 @@ sumAllPrimes(10);
 // Remove from the array whatever is in the following arguments. Return the leftover numbers in an array
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
 
-function seekAndDestroy() {}
+function seekAndDestroy(...arg) {
+  const array = arg.filter((item) => Array.isArray(item)).flat(1);
+  const param = arg.filter((item) => {
+    if (Array.isArray(item)) {
+      return false;
+    }
+    return true;
+  });
+  let res;
+  for (let i = 0; i <= param.length - 1; i++) {
+    res = array.filter((item) => item !== param[i]);
+  }
+  // console.log(res);
+}
+
+seekAndDestroy([2, 3, 4, 6, 6, "hello"], "hello");
 
 // CHALLENGE 4: SORT BY HEIGHT
 // Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees.
