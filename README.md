@@ -27,3 +27,11 @@
 5: Letter Changes
 
 6: Make Pairs
+
+## app3.js
+
+1: Add All Numbers
+
+2: Sum All Primes
+
+3: Seek and Destroy
