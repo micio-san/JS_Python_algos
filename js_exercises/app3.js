@@ -7,7 +7,7 @@ function addAll() {
   for (let i = 0; i <= arguments.length - 1; i++) {
     res += arguments[i];
   }
-  console.log(res);
+  //   console.log(res);
 }
 
 addAll(2, 5, 6, 7);
@@ -15,9 +15,27 @@ addAll(2, 5, 6, 7);
 // CHALLENGE 2: SUM ALL PRIMES
 // Pass in a number to loop up to and add all of the prime numbers. A prime number is a whole number greater than 1 whose only factors are 1 and itself
 // ex. sumAllPrimes(10) == 17
+//un numero primo è un numero divisibile solo per uno e per se stesso
 
-function sumAllPrimes() {}
+function sumAllPrimes(n) {
+  let res = 0;
+  function check(i) {
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 
+  for (let i = 2; i <= n; i++) {
+    if (check(i)) {
+      res += i;
+    }
+  }
+}
+
+sumAllPrimes(10);
 // CHALLENGE 3: SEEK & DESTROY
 // Remove from the array whatever is in the following arguments. Return the leftover numbers in an array
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
