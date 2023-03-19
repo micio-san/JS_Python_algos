@@ -82,16 +82,48 @@ function sortByHeight(a) {
 
 sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]);
 
-// CHALLENGE 5: MISSING LETTERS
+/*  CHALLENGE 5: CLASSES
+     Create a class called Vehicle with  (name - maxSpeed) and a 
+      method called "getMaxSpeed" that returns the "maxSpeed"
+      Create a "Spaceship" class that extends "Vehicle" with (numRocketEngines)
+*/
+
+class Vehicle {
+  constructor(_name, _maxSpeed) {
+    this.name = _name;
+    this.maxSpeed = _maxSpeed;
+  }
+  getMaxSpeed() {
+    return this.maxSpeed;
+  }
+}
+
+class Spaceship extends Vehicle {
+  constructor(_name, _maxSpeed, _numRocketEngines) {
+    super(_name, _maxSpeed);
+    this.numRocketEngines = _numRocketEngines;
+  }
+}
+
+const spaceship = new Spaceship("Enterprise", 1000, 2);
+
+// CHALLENGE 6: MISSING LETTERS
 // Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
 // ex.
 // missingLetters("abce") == "d"
 // missingLetters("abcdefghjklmno") == "i"
 // missingLetters("abcdefghijklmnopqrstuvwxyz") == undefined
 
-function missingLetters() {}
+function missingLetters(str) {}
 
-// CHALLENGE 6: EVEN & ODD SUMS
+missingLetters("abcdefghjklmno");
+
+/*CHALLENGE 8: COMPARE STRINGS 
+Finde the difference between an array a and an array b and return a boolean
+ex. findeDifference([dog], [dwg]) == false;
+*/
+
+// CHALLENGE 9: EVEN & ODD SUMS
 // Take in an array and return an array of the sums of even and odd numbers
 // ex.
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]

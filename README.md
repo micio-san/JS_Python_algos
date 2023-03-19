@@ -38,6 +38,12 @@
 
 4: Sort By Height
 
+5: Classes
+
+7: Missing Letters
+
+8: Even et Odds Sums
+
 # PHP exercises :
 
 ## index.php
