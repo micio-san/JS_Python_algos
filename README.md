@@ -91,3 +91,35 @@
 10: Check If num %3 || %7
 
 ##index2.php
+
+1: Write Script
+
+2: Display Array
+
+3: Show Associative Array
+
+4: Delete From Array
+
+5: Get First By Key
+
+6: Handle Json
+
+7: Add Item To Array
+
+8: Sort Associative Array
+
+9: Get Average
+
+10: Merge And Sort
+
+11: Display From Class
+
+12: Class With Private Property
+
+13: Get Factorial
+
+14: Sort Array Using OOP
+
+15: Get Difference in Dates
+
+16: Change Case

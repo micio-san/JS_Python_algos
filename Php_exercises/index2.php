@@ -304,7 +304,7 @@ $arr->getSorted();
 
 
 /*
-Calculate the difference between two dates using PHP OOP approach.
+15:Calculate the difference between two dates using PHP OOP approach.
 Sample: 1981-11-03, 2013-09-04 => Difference : 31 years, 10 months, 1 days
 */
 
@@ -331,3 +331,44 @@ class Date
 
 $diff = new Date("1981-11-03", "2013-09-04");
 $diff->getDifference();
+
+
+/*
+16:  Write a PHP script to lower-case and upper-case, all elements in an array
+*/
+
+function changeCase($arr)
+{
+    if (!is_array($arr)) return;
+    $new = [];
+    for ($i = 0; $i <= count($arr) - 1; $i++) {
+        if (is_string($arr[$i])) {
+            $str =  strtoupper($arr[$i]);
+            array_push($new, $str);
+        } else {
+            array_push($new, $arr[$i]);
+        }
+    };
+    // echo "<pre>";
+    // var_dump($new);
+    // echo "<pre>";
+    toLower($new);
+};
+
+function toLower($arr)
+{
+    $res = [];
+    for ($i = 0; $i <= count($arr) - 1; $i++) {
+        if (is_string($arr[$i])) {
+            $str =  strtolower($arr[$i]);
+            array_push($res, $str);
+        } else {
+            array_push($res, $arr[$i]);
+        }
+    };
+    // echo "<pre>";
+    // var_dump($res);
+    // echo "<pre>";
+};
+
+changeCase(["dsa", "msaa", 4, "ddaw", "dajt", 7, "aas"]);
