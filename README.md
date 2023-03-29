@@ -90,7 +90,7 @@
 
 10: Check If num %3 || %7
 
-##index2.php
+## index2.php
 
 1: Write Script
 
