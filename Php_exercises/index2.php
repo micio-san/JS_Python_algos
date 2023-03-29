@@ -212,3 +212,122 @@ function insert_into_arrays()
 };
 
 // insert_into_arrays();
+
+/*
+11: Write a simple PHP class which displays the following string.
+'MyClass class has been initialized !'
+*/
+
+class myClass
+{
+    public $str;
+    public function __construct($str)
+    {
+        $this->str = $str;
+    }
+    public function getStr()
+    {
+        return  $this->str;
+    }
+};
+
+$greet = new myClass("MyClass class has been initialized !");
+$greet->getStr();
+
+/*
+12: Write a simple PHP class which displays an introductory message like 
+"Hello All, I am Scott", where "Scott" is 
+an argument value of the method within the class.
+*/
+
+class present
+{
+    public $name;
+    private $presentation = "Hello All, I am";
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getPresentation()
+    {
+
+        return $this->presentation . " " . $this->name;
+    }
+};
+
+$scott = new present("Scott");
+$scott->getPresentation();
+
+/*
+13:
+Write a PHP class that calculates the factorial of an integer.
+*/
+
+function getFactorial($int)
+{
+    if (is_int($int)) {
+        $res = $int;
+        for ($i = $int - 1; $i > 0; $i--) {
+            $res *= $i;
+        }
+        // echo $res;
+    }
+};
+
+getFactorial(5);
+
+/* 14: 
+Write a PHP class that sorts an ordered integer array with the help of sort() function.
+Sample array : array(11, -2, 4, 35, 0, 8, -9)
+Output : Array ( [0] => -9 [1] => -2 [2] => 0 [3] => 4 [4] => 8 [5] => 11 [6] => 35 )
+*/
+
+class sortArray
+{
+    public $arr;
+
+    public function __construct($arr)
+    {
+        $this->arr = $arr;
+    }
+
+    public function getSorted()
+    {
+        sort($this->arr);
+    }
+}
+
+$arr = new sortArray(array(11, -2, 4, 35, 0, 8, -9));
+$arr->getSorted();
+
+
+/*
+Calculate the difference between two dates using PHP OOP approach.
+Sample: 1981-11-03, 2013-09-04 => Difference : 31 years, 10 months, 1 days
+*/
+
+class Date
+{
+    public $first_date;
+    public $second_date;
+
+    public function __construct($first_date, $second_date)
+    {
+        $this->first_date = $first_date;
+        $this->second_date = $second_date;
+    }
+
+    public function getDifference()
+    {
+        $Date1 = new DateTime($this->first_date);
+        $Date2 = new DateTime($this->second_date);
+        $diffy = $Date1->diff($Date2);
+        $res = $diffy->y . " years " . $diffy->m . " months " . $diffy->d . " days ";
+        echo $res;
+    }
+}
+
+$diff = new Date("1981-11-03", "2013-09-04");
+$diff->getDifference();

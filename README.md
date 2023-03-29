@@ -44,6 +44,28 @@
 
 8: Even et Odds Sums
 
+## app4.js
+
+1:Find Number of Digits
+
+2:Seven Boom
+
+3:Count True
+
+4: Tile Teamworks Tactics
+
+5: Odd-ish vs Even-ish
+
+6: Get Days
+
+7: Nums In Str
+
+8:Histogram
+
+9: Positive Dominant
+
+10: Grocery Price
+
 # PHP exercises :
 
 ## index.php
@@ -67,3 +89,5 @@
 9: Add to Str
 
 10: Check If num %3 || %7
+
+##index2.php
