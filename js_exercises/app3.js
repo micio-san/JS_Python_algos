@@ -122,7 +122,13 @@ missingLetters("abcdefghjklmno");
 Finde the difference between an array a and an array b and return a boolean
 ex. findeDifference([dog], [dwg]) == false;
 */
+function compareString(str1, str2) {
+  const sorted1 = str1.split("").sort((a, b) => a - b);
+  const sorted2 = str2.split("").sort((a, b) => a - b);
+  const answer = sorted1.join("") === sorted2.join("") ? true : false;
+}
 
+compareString("dof", "fpd");
 // CHALLENGE 9: EVEN & ODD SUMS
 // Take in an array and return an array of the sums of even and odd numbers
 // ex.
