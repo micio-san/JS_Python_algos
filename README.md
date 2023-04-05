@@ -66,4 +66,30 @@
 
 10: Grocery Price
 
+# Python exercises :
 
+## app.py
+
+1: Stuttering
+
+2: Find The Discount
+
+3: Radians To Degrees
+
+4: Circle To Degrees
+
+5: Curzon Numbers
+
+6: Luke, I Am Your...
+
+7: Solving Exponential Equations With Logarithms
+
+8: Invert Colors
+
+9: End Corona
+
+10: Basic Calculator
+
+11: Calculating Damage
+
+12: Let's Sort This
